@@ -84,23 +84,20 @@ Overall, these insights reveal that drivers who are socially active, of a certai
 
 ### In-Depth Analysis of Coffee House Coupons
 
-1. I've created bar plot for all the available category data types aganist whether the coupon is accepted or not (column 'Y') to see which variables contribute to accepting a coupon. This plot helped me to look at which colums to consider for futher analysis. The colums I chose are `destination`, `passanger`, `expiration`, `age`, `occupation` and `CoffeeHouse`.
+1. I have generated bar plots for all categorical variables in relation to coupon acceptance (denoted by the 'Y' column) to identify which factors influence coupon acceptance. These visualizations were instrumental in determining the variables most impactful in coupon acceptance, leading me to focus further analysis on the following columns: `destination`, `passanger`, `expiration`, `age`, `occupation`, and `CoffeeHouse`.
 
     <img src="./images/ch_1_initial_subplot_countplot.png" width="800">
 
-2. The acceptance rate for the chosen colums are below.
+2. The observed acceptance rates for the selected columns are as follows:
 
-   ```
-    destination: 57.82% acceptance rate
-    passanger: 59.14% acceptance rate
-    expiration: 58.06% acceptance rate
-    age: 52.86% acceptance rate
-    occupation: 57.31% acceptance rate
-    CoffeeHouse: 65.90% acceptance rate
+   - `destination`: Acceptance rate of 57.82%
+   - `passanger`: Acceptance rate of 59.14%
+   - `expiration`: Acceptance rate of 58.06%
+   - `age`: Acceptance rate of 52.86%
+   - `occupation`: Acceptance rate of 57.31%
+   - `CoffeeHouse`: Acceptance rate of 65.90%
 
-   ```
-
-3. Created a bar plot for the columns `destination`, `passanger`, `expiration`, `age` and `CoffeeHouse` with the percentage of accepted and rejected coupons. Below are the bar plots
+3. Bar plots were generated for the columns `destination`, `passanger`, `expiration`, `age`, and `CoffeeHouse`, showcasing the percentages of accepted and rejected coupons. The following are the respective bar plots:
 
     <div style="display: flex; justify-content: space-between;">
         <img src="./images/ch_2_bar_plt_pct_destination.png" width="400">
@@ -114,16 +111,16 @@ Overall, these insights reveal that drivers who are socially active, of a certai
         <img src="./images/ch_2_bar_plt_pct_CoffeeHouse.png" width="800">
     </div>
 
-4. From the above plot, below are the colums and their values we are interested in which will increase the coffee house coupon acceptance.
+4. Based on the aforementioned plots, the following columns and their specific values have been identified as key factors that potentially enhance the acceptance of coffee house coupons:
 
-   * When driver go to `coffeeHouses` atleast once a month.
-   * When driver is less than 30 years. 
-   * When passangers are `friends` or `Partner`.
-   * When the driver is `student` or `unemployed`.
-   * When coupon expires in a day rather than in couple of hours.
-   * When `destination` is `No Urgent Place`
+   - Drivers who visit `coffeeHouses` at least once a month.
+   - Drivers under the age of 30.
+   - Passengers who are either `friends` or a `Partner`.
+   - Drivers who are either `students` or `unemployed`.
+   - Coupons with an expiration of one day, as opposed to just a few hours.
+   - A `destination` specified as `No Urgent Place`.
 
-5. If drivers is a student whose age is less than 21 and the coupon expires in a day, then the there is a `95.45%` change that `Coffee House` coupon is accepted.
+5. For more in-depth analysis, I have refined the coffee house dataset to exclusively include drivers who frequent `coffeeHouses` at least once monthly.
 
 #### Acceptance Rates by Demographics and Behaviors
 
@@ -132,6 +129,8 @@ Overall, these insights reveal that drivers who are socially active, of a certai
 - **Student and Unemployment Status**: A significant acceptance rate was observed among students and unemployed individuals, particularly in younger age brackets.
 
 - **Expiration Influence**: Coupons with a one-day expiration period showed a higher acceptance rate.
+
+**Trivia:** When the driver is a student under 21 years of age and the coupon has a one-day expiration, the likelihood of a `Coffee House` coupon being accepted increases significantly, with a 95.45% probability of acceptance..
 
 #### Actionable Insights and Recommendations
 
