@@ -99,17 +99,11 @@ Overall, these insights reveal that drivers who are socially active, of a certai
 
 3. Bar plots were generated for the columns `destination`, `passanger`, `expiration`, `age`, and `CoffeeHouse`, showcasing the percentages of accepted and rejected coupons. The following are the respective bar plots:
 
-    <div style="display: flex; justify-content: space-between;">
-        <img src="./images/ch_2_bar_plt_pct_destination.png" width="400">
-        <img src="./images/ch_2_bar_plt_pct_passanger.png" width="400">
-    </div>
-    <div style="display: flex; justify-content: space-between;">
-        <img src="./images/ch_2_bar_plt_pct_expiration.png" width="400">
-        <img src="./images/ch_2_bar_plt_pct_age.png" width="400">
-    </div>
-    <div style="text-align: center;">
-        <img src="./images/ch_2_bar_plt_pct_CoffeeHouse.png" width="800">
-    </div>
+    <img src="./images/ch_2_bar_plt_pct_destination.png" width="800">
+    <img src="./images/ch_2_bar_plt_pct_passanger.png" width="800">
+    <img src="./images/ch_2_bar_plt_pct_expiration.png" width="800">
+    <img src="./images/ch_2_bar_plt_pct_age.png" width="800">
+    <img src="./images/ch_2_bar_plt_pct_CoffeeHouse.png" width="800">
 
 4. Based on the aforementioned plots, the following columns and their specific values have been identified as key factors that potentially enhance the acceptance of coffee house coupons:
 
